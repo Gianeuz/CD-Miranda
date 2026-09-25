@@ -1,0 +1,10 @@
+background-color {
+    color:white
+}
+
+p {
+    background-color: #ffffff;
+    color: rgb(60, 255, 0);
+    padding: 10px;
+    text-align: left;
+}
