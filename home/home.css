@@ -4,10 +4,15 @@
     padding: 0;
 }
 
+:root {
+    --green: #356f36;
+    --dark-green: #1f4928;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f7;
-    color: #1f4928
+    background-color: white;
+    color: white;
 }
 
 .navbar {
@@ -23,9 +28,9 @@ body {
 .Cname {
     display: flex;
     align-items: center;
-   gap: 12px;
+    gap: 12px;
     text-decoration: none;
-    color: #1f4928;
+    color: var(--dark-green)
 }
 
 .brand-logo {
@@ -60,11 +65,11 @@ body {
 .navbar nav a {
     text-decoration: none;
     font-size: 16px;
-    color: #214e2b;
+    color: var(--dark-green);
 }
 
 .navbar nav a:hover {
-    color: #356f36;
+    color: var(--green);
     font-weight: 700;
 }
 
@@ -93,8 +98,8 @@ body {
 
 .login-btn {
     background-color: white;
-    color: #1f4928;
-    border: 2px solide #1f4928;
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
     border-radius: 8px;
     padding:8px 28px;
     font-size: 16px;
@@ -103,9 +108,9 @@ body {
 }
 
 .signup-btn {
-    background-color: #1f4928;
+    background-color: var(--dark-green);
     color: white;
-    border: 2px solide #1f4928;
+    border: 2px solid var(--dark-green);
     border-radius: 8px;
     padding: 8px 28px;
     font-size: 16px;
@@ -118,7 +123,121 @@ body {
 }
 
 .signup-btn:hover {
-    background-color: #1f4928;
+    background-color: var(--dark-green);
 }
+
+.hero {
+    min-height: 600px;
+    background-image: url("home-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.5) 70%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    color: white;
+    margin: 95px 0 0 7.5%;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.18;
+    font-weight: 800;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.hero p {
+   font-size: 27px;
+   line-height: 1.4;
+   margin-top: 25px;
+   color: white;
+}
+
+.search-bar{
+    position: absolute;
+    z-index: 4;
+    bottom: 35px;
+    left: 3%;
+    right: 3%;
+    background: white;
+    border: 10px solid rgba(255, 255, 255, 0.75);
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 
+    1fr
+    1fr
+    1fr
+    1.02fr;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+}
+
+.search-bar label {
+    padding: 13px 27px;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-bar label span{
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--dark-green);
+}
+
+.search-bar select, .search-bar input {
+    width:100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: gray;
+    font-size: 15px;
+}
+
+.search-bar select {
+    cursor: pointer;
+}
+
+.search-bar input::placeholder {
+    color: gray
+}
+
+.search-submit{
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    margin: 4px;
+    background: var(--green);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.search-submit:hover {
+    background-color: var(--dark-green)
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
 
 

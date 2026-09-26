@@ -38,12 +38,74 @@
             <button class="signup-btn small" id="signupBtn">
                 Sign Up
             </button>
-
         </div>
-
-
     </header>
 
-</body>
+    <main>
+    <section class="hero" id="home">
 
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>
+                Find Your<br>
+                Dream Property
+            </h1>
+
+            <p> Discover the perfect property that feels like home.</p>
+        </div>
+
+        <form
+            class="search-bar" id="propertySearch">
+
+            <label>
+                <span>TYPE</span>
+                <select id="typeFilter">
+                    <option value="all">
+                        Property Type
+                    </option>
+
+                    <option value="villa">
+                        Villa
+                    </option>
+
+                    <option value="subdivision">
+                        Subdivision
+                    </option>
+                </select>
+            </label>
+
+
+            <label>
+                <span>LOCATIONS</span>
+                <select id="locationFilter">
+                    <option value="all">
+                        All Cities
+                    </option>
+                    <option value="naic">
+                        Naic, Cavite
+                    </option>
+                    <option value="lpinas">
+                        Las Piñas
+                    </option>
+                </select>
+            </label>
+
+
+            <label class="keyword">
+                <span>SEARCH</span>
+                <input id="keyword" type="text" placeholder="Enter Keywords">
+            </label>
+
+            <button class="g-btn search-submit" type="submit">
+                <span>Find Property</span>
+
+                <img src="search2.png" alt="" class="search-icon">
+            </button>
+        </form>
+    </section>
+    </main>
+
+
+</body>
 </html>
