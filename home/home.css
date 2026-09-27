@@ -341,17 +341,19 @@ body {
 
 .view-all {
     display: block;
+    width: fit-content;
     margin: 35px auto 0;
     padding: 12px 50px;
-
     background-color: white;
     color: var(--green);
     border: 2px solid var(--green);
     border-radius: 8px;
-
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
+    transition: 0.2s ease;
 }
 
 .view-all:hover {
