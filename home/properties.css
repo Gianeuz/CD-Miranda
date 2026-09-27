@@ -400,7 +400,6 @@ body {
     gap: 12px;
 }
 
-
 .socials a {
     width: 40px;
     height: 40px;
@@ -412,7 +411,6 @@ body {
     text-decoration: none;
     transition: 0.2s ease;
 }
-
 
 .socials a:hover {
     transform: translateY(-3px);
