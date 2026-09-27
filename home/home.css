@@ -429,3 +429,277 @@ body {
     object-fit: cover;
     display: block;
 }
+
+
+.feedback {
+    width: 100%;
+    padding: 70px 6%;
+    background-color: white;
+}
+
+.feedback-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feedback-heading h2 {
+    margin: 0 0 12px;
+    font-size: 42px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.feedback-heading p {
+    margin: 0;
+    font-size: 17px;
+    color: gray;
+}
+
+.feedback-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feedback-card {
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-stars {
+    color: #d5a928;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.feedback-text {
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: gray;
+    text-align: justify;
+}
+
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--green);
+    color: white;
+
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.client-info strong {
+    display: block;
+    color: var(--green);
+    font-size: 15px;
+}
+
+.client-info span {
+    display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+.contact {
+    width: 100%;
+    padding: 70px 6%;
+    background-color: white;
+    margin-bottom: 300px;
+}
+
+.contact-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h2 {
+    margin: 0 0 15px;
+    font-size: 42px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.contact-content > p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: gray
+}
+
+/*pagud naman*/
+
+h5 {
+    text-align: center;
+    font-size: large;
+    color: var(--dark-green);
+    padding-bottom: 300px;
+}
+
+.contact-btn {
+    padding: 14px 38px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--dark-green);
+}
+
+.footer {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns:
+        1.3fr
+        1fr
+        1.2fr;
+    gap: 80px;
+    padding: 60px 5% 50px;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin: 0 0 17px;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.75;
+    color: white;
+}
+
+.footer-about p {
+    max-width: 400px;
+}
+
+.footer-links-column a {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.75;
+    transition: 0.2s ease;
+}
+
+.footer-links-column a:hover {
+    color: white;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-contact-item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.footer-contact-item p {
+    margin: 0;
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 28px 3%;
+    display: grid;
+    grid-template-columns:
+        1fr
+        auto
+        1fr;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer-bottom > span {
+    color: white;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+
+.socials a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-green);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+
+.socials a:hover {
+    transform: translateY(-3px);
+}
+
+.socials img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.legal {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-end;
+
+}
+
+
+.legal a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+
+}
+
+.legal a:hover {
+    color: white;
+}
